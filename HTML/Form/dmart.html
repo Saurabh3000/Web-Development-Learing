@@ -1,0 +1,109 @@
+<html>
+<head>
+	
+	<title>www.dmart.com</title>
+	<style type="text/css">
+		.mybutton{
+					background-color: gold;
+					padding: 8px 15px;
+					border-radius: 3px;
+					border: none;
+				}
+		.mybutton:hover{
+						background-color: crimson;
+						color: white;
+		}
+
+		.inputclass{
+			width: 90px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<form>
+	<center>
+		<table border="1" cellpadding="3">
+			
+			<tr bgcolor="gold">
+				<th colspan="8">
+					<h1>D-Mart Product Billing</h1>
+				</th>
+			</tr>
+
+			<tr>
+				<td>Pid</td>
+				<td>Product Name</td>
+				<td>Product Rate</td>
+				<td>Product Quantity</td>
+				<td>Bill Amount</td>
+				<td>Select GST</td>
+				<td>GST Amount</td>
+				<td>Final Bill</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="text" name="pid" class="inputclass"> 
+				</td>
+
+				<td>
+					<input type="text" name="pname">
+				</td>
+
+				<td>
+					<input type="text" name="rate">
+				</td>
+
+				<td>
+					<input type="text" name="qty">
+				</td>
+
+				<td>
+					<input type="text" name="amt">
+				</td>
+
+				<td>
+					<select name="selected_gst">
+						<option value="" disabled selected>Select GST</option>
+						<option value="10">10%</option>
+						<option value="20">20%</option>
+						<option value="30">30%</option>
+					</select>
+				</td>
+
+				<td>
+					<input type="text" name="gstamt">
+				</td>
+
+				<td>
+					<input type="text" name="fbill">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="8" align="center">
+					<input type="submit" value="Submit Bill" class="mybutton" >
+					<input type="reset" value="Reset" class="mybutton" >
+					<input type="button" value="Print Bill" onclick="print()" class=" mybutton" >
+				</td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</table>
+	</center>
+	</form>
+</body>
+</html>
