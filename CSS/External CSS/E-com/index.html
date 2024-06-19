@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>www.E-com.com</title>
+	<style type="text/css">
+		
+		body{
+			background-image: url("background.webp");
+			background-repeat: none;
+			background-size: cover;
+		}
+
+		p{
+			text-align: center;
+			font-size: 30px;
+			color: darkorange;
+			font-weight: bold;
+			margin-top: -25px;
+		}
+
+		#login{
+			background:rgba(0, 0, 0, 0.8);
+			padding: 40px;
+			margin-top: 250px;
+			width: 300px;
+			margin-right: 20%;
+			
+			border-radius: 10px;
+		}
+
+		input[type="text"],input[type="password"]
+		{
+			padding: 7px;
+			width: 100%;
+
+			background: transparent;
+			border-bottom-style: 2px;
+			border-bottom-color: red;
+
+			border-right-style: none;
+			border-left-style: none;
+			border-top-style: none;
+		}
+
+		input[type="submit"],input[type="reset"]
+		{
+			width: 106%;
+			padding: 5px;
+			background-color: orange;
+			border-radius: 7px;
+			font-size: 17px;
+			margin-top: 7px;
+		}
+
+		input[type="submit"]:hover,input[type="reset"]:hover{
+			background-color: darkorange;
+			font-weight: bold;
+		}
+
+		::placeholder{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="login">
+
+		<p>Amazon</p>
+
+		<table cellpadding="5" width="100%">
+
+			<tr>
+				<td>
+					<input type="text" name="uname" placeholder="Username">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="password" name="pass" placeholder="Password">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="submit" value="Submit">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<input type="reset" value="Cancel">
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+</body>
+</html>

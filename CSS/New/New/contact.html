@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		body{
+			margin: 0px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#main{
+
+			background-color: rgba(0, 0, 0, 0.6);
+			border-style: solid;
+			border-color: grey;
+			color: white;
+			border-width: 5px;
+			width: 40%;
+			margin-top: 5%;
+			padding: 30px;
+			font-size: 17px;
+			font-family: cursive;
+
+			
+		}
+
+		.inputclass{
+			border-radius: 5px;
+			padding: 7px;
+			border: none;
+			width: 90%;
+		}
+
+		.mybtnclass{
+			padding: 8px;
+			width: 150px;
+			font-size: 16px;
+			border-radius: 3px;
+			border: none;
+		}
+
+		.mybtnclass:hover{
+			background-color: skyblue;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body background="contact1.jpg">
+
+
+	
+	<!-- <center> -->
+		<div id="main">
+			<!-- <img src="contact.jpg" width="500" height="300">			 -->
+
+		<form>
+			<table cellpadding="7" width="80%">
+				
+				<tr>
+					<td>First Name</td>
+					<td>
+						<input type="text" name="fname" class="inputclass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Last Name</td>
+					<td>
+						<input type="text" name="lname" class="inputclass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Phone No</td>
+					<td>
+						<input type="number" name="phon" class="inputclass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Email</td>
+					<td>
+						<input type="email" name="email" class="inputclass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Message</td>
+					<td>
+						<textarea rows="5" cols="25" class="inputclass"></textarea>
+					</td>
+				</tr>
+
+				<tr align="center">
+					<td colspan="2">
+						<input type="submit" value="Send Massage" class="mybtnclass">
+						<input type="reset" value="Reset" class="mybtnclass">
+					</td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+	<!-- </center> -->
+
+
+
+</body>
+</html>

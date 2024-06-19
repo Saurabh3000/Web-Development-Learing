@@ -1,0 +1,77 @@
+body{
+	margin: 0px;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 15%;
+	background-color: #f1f1f1;
+	font-size: 20px;
+	height: 100%;
+	position: fixed;   /*It is used to stick on the webpage.*/
+}
+li a{
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+li a:hover{
+	background-color: #0cbaba;
+	color: white;
+}
+
+#home,#aboutus,#services,#ourteam,#hotels,#career,#contactus{
+	margin-left: 15%;
+	padding: 5px;
+	height: 1000px;
+}
+
+#aboutus{
+	background-color: #0cbaba;
+}
+
+#services{
+	background-color: gold;
+}
+
+#ourteam{
+	background-color: cyan;
+}
+
+#hotels{
+	background-color: purple;
+	color: white;
+}
+
+#career{
+	background-color: crimson;
+}
+
+#contactus{
+	background-color: lavender;
+}
+
+#team{
+	border-radius: 200px;
+}
+
+#hotel{
+	/*display: block;*/
+	/*border-radius: 100px;*/
+}
+
+#footer{
+	background-color: deeppink;
+	padding: 5px;
+	text-align: center;
+
+}
+
+#hname,#fcontent{
+	font-size: 20px;
+	color: white;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+
+		function myfun()
+		{
+
+
+		
+		var task_menu=["Tracking","STUDY","STUDY","STUDY","LIBRARY","MOVIES","BADMINTON"]
+
+		var d=new Date();
+
+		var dd=d.getDay();
+
+		//document.write("<font color='gold'>");
+		//document.write(task_menu[dd]);
+		//document.write("</font>");
+
+		if(dd%2==0)
+		{
+		document.getElementById("show_task").innerHTML="<font color='green'>"+task_menu[dd]+"</font>";					
+		}
+		else
+		{
+		document.getElementById("show_task").innerHTML="<font color='red'>"+task_menu[dd]+"</font>";
+		}
+
+	}
+	</script>
+
+	<style type="text/css">
+		
+		h1{
+			background-color: black;
+			color: gold;
+			font-size: 30px;
+			width: 300px;
+			text-align: center;
+		}
+	</style>
+
+
+
+
+</head>
+<body onload="myfun()">
+
+	<center>
+		<h1><span id="show_task"></span></h1>
+	</center>
+
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		.shiftdata{
+			float: right;
+		}
+
+		.allbutton{
+			background-color: gold;
+			padding: 5px;
+			width: 40%;
+			border-radius: 7px;
+			border: none;
+			cursor: pointer;
+		}
+
+		.allbutton:hover{
+			background-color: white;
+			color: crimson;
+		}
+
+		input[type="text"]
+		{
+			border-radius: 5px;
+			padding: 3px;
+			border: none;
+			outline: none;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function hide_fun()
+		{
+			document.getElementById("1st_row").style.display="none";
+			document.getElementById("2nd_row").style.display="none";
+			document.getElementById("3rd_row").style.display="none";
+			document.getElementById("4th_row").style.display="none";
+
+
+		}
+		
+		function calculation()
+		{
+			document.getElementById("1st_row").style.display="";
+			document.getElementById("2nd_row").style.display="";
+			document.getElementById("3rd_row").style.display="";
+			document.getElementById("4th_row").style.display="";
+
+
+			var tm=parseInt(document.f1.tech.value);
+
+			var apty=parseInt(document.f1.apty.value);
+
+			var e=parseInt(document.f1.eng.value);
+
+			var tm=tm+apty+e;
+
+			document.f1.tmark.value=tm;
+
+			var per=tm/3;
+
+			document.f1.score.value=per;
+
+			var a="Selected";
+
+			var b="Not Selected";
+
+			if(tm>=60 && apty>=50 && e>=30)
+			{
+				document.f1.result.value=a;
+			}
+			else
+			{
+				document.f1.result.value=b;
+
+			}
+		}
+	</script>
+	
+</head>
+<body onload="hide_fun()" text="white">
+
+	<form name="f1">
+		<center>
+			<table cellpadding="7" width="60%" bgcolor="purple">
+				<tr>
+					<th colspan="2">
+						<h1 ><i><font color="black">JSPM Campus</font></i></h1>
+					</th>
+				</tr>
+
+				<tr>
+					<td class="shiftdata">Name of Student</td>
+					<td>
+						<input type="text" name="name">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="shiftdata">Technical</td>
+					<td>
+						<input type="text" name="tech">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="shiftdata">Aptitude Test</td>
+					<td>
+						<input type="text" name="apty">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="shiftdata">English</td>
+					<td>
+						<input type="text" name="eng">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center">
+						<input type="button" value="Result" onclick="calculation()" class="allbutton">
+					</td>
+				</tr>
+
+				<tr id="1st_row">
+					<td class="shiftdata">Interview Total Mark</td>
+					<td>
+						<input type="text" name="tmark">
+					</td>
+				</tr>
+
+				<tr id="2nd_row">
+					<td class="shiftdata">Score</td>
+					<td>
+						<input type="text" name="score">
+					</td>
+				</tr>
+
+				<tr id="3rd_row">
+					<td class="shiftdata">Result</td>
+					<td>
+						<input type="text" name="result">
+					</td>
+				</tr>
+
+				<tr id="4th_row">
+					<td colspan="2" align="center">
+						<input type="button" value="Print" onclick="print()" class="allbutton">
+						<input type="reset" value="Reset" onclick="hide_fun()" class="allbutton">
+
+					</td>
+				</tr>
+
+
+
+			</table>
+		</center>
+	</form>
+
+</body>
+</html>
